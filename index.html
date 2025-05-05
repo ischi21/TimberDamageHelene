@@ -288,6 +288,13 @@ var countiesLayer = L.geoJson.ajax("assets/TimberCounties.geojson", {
     onEachFeature: onEachFeature
 }).addTo(mymap);
 
+	L.control.scale({
+    position: 'bottomleft', // Position of the scale (default is bottomleft)
+    imperial: true, // Show imperial units (miles)
+    metric: true, // Show metric units (kilometers)
+    maxWidth: 100 // Maximum width of the scale bar in pixels
+}).addTo(map);
+
 
 </script>
 </body>
